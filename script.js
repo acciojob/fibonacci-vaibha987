@@ -2,6 +2,9 @@ function fibonacci(num) {
   if (num === 0) {
     return 0;
   } 
+	if(num===1){
+		return 1;
+	}
   let x = 0;
   let y = 1;
   
