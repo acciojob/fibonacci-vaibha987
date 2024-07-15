@@ -10,7 +10,7 @@ function fibonacci(num) {
     x = y;
     y = z;
   }
-  return x;
+  return y;
 }
 
 module.exports = fibonacci;
