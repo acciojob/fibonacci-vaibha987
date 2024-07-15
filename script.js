@@ -1,18 +1,16 @@
 function fibonacci(num) {
+  if (num === 0) {
+    return 0;
+  } 
   let x = 0;
   let y = 1;
   
-  for(let i = 2; i <= num; i++) {
+  for(let i = 2; i < num; i++) {
     let z = x + y;
     x = y;
     y = z;
   }
-
-  if (num === 0 || num === 1) {
-    return x;
-  } else {
-    return y;
-  }
+  return y;
 }
 
 module.exports = fibonacci;
