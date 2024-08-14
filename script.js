@@ -1,19 +1,14 @@
-function fibonacci(num) {
-  let num1 = 0;
-    let num2 = 1;
-    let sum;
-    if (num === 1) {
-        return num1;
-    } else if (num === 2) {
-        return num2;
-    } else {
-        for (let i = 3; i <= num; i++) {
-            sum = num1 + num2;
-            num1 = num2;
-            num2 = sum;
-        }
-        return num2;
-    }
+function fibonacci(N) // returns the Nth Fibonacci Number
+{
+let a = 0; // Pos 1 || 1st Finonacci Number || Position 1 in the Fibo. Series 
+let b = 1;  // Pos 2 || 2nd Finonacci Number || Position 2 in the Fibo. Series 
+let c = 0; // Should be position 3
+let currentPosition = 3;
+while (currentPosition <= N) { // Exit when N+1 happens; so c would've been calculated as Position Nth in the Fibo. Series 
+    c = a + b;
+     a = b; // n-2th
+      b = c; // n-1th value
+    ++currentPosition;
 }
-
-module.exports = fibonacci;
+return c;
+}
