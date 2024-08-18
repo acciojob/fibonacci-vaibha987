@@ -1,14 +1,22 @@
-function fibonacci(num) // returns the Nth Fibonacci Number
-{
-let a = 0; // Pos 1 || 1st Finonacci Number || Position 1 in the Fibo. Series 
-let b = 1;  // Pos 2 || 2nd Finonacci Number || Position 2 in the Fibo. Series 
-let c = 0; // Should be position 3
-let currentPosition = 3;
-while (currentPosition <= num) { // Exit when N+1 happens; so c would've been calculated as Position Nth in the Fibo. Series 
-    c = a + b;
-     a = b; // n-2th
-      b = c; // n-1th value
-    ++currentPosition;
+// your code here
+function fibonacci(num) {
+let a=0
+let b=1
+let c=0
+    if(num==1){
+     return 0
+    }
+    else if(num==2){
+        return 1
+    }
+    else{
+     for(let i=3;i<=num;i++){
+	c=a+b
+	a=b
+	b=c
 }
-return c;
+	return c
+    }
 }
+
+fibonacci(5)
