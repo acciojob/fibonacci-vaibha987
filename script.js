@@ -18,5 +18,3 @@ let c=0
 	return c
     }
 }
-
-fibonacci(5)
