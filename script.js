@@ -17,5 +17,6 @@ let c=0
 }
 	return c
     }
-	module.exports = fibonacci
+	
 }
+module.exports = fibonacci;
